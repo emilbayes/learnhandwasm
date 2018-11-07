@@ -26,7 +26,7 @@ var wasm = require('./memory')
 var mod = wasm()
 
 // Change the view of the wasm memory to Float64
-var f64Array = new Float64Array(mod.memory)
+var f64Array = new Float64Array(mod.memory.buffer)
 
 f64Array[0] = 1
 f64Array[1] = 10e-100

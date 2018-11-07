@@ -111,7 +111,7 @@ that the last value returned, will become the return value of the function.
 Now try compiling the WASM module:
 
 ```
-wat2wasm arithemtic.wat
+wat2wasm arithmetic.wat
 ```
 
 Also have a look at the dumped module, with and without the debug names.

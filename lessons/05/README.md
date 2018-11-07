@@ -106,7 +106,7 @@ var mod = wasm()
 mod.exports['f64.set'](0, 1) // set 1 at address 0
 mod.exports['f64.set'](1, 10e-100) // set 10e-100 at address 8
 
-console.log(mod.exports.memory) // You should be able to see the table above
+console.log(mod.memory) // You should be able to see the table above
 ```
 
 Check the above and see what the resulting memory looks like.

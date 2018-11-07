@@ -16,13 +16,15 @@ is a model for branching/looping:
   (param $input.len i32)
 
   (local $i i32)
+  (local $input.end i32)
 
   (set_local $i (i32.const 0))
+  (set_local $input.end (i32.mul (get_local $input.len) (i32.const 8)))
 
   (loop $continue
     ;; do something at iteration with a f64. Here we drop the value, but may
     ;; sum it or similar
-    (drop (i64.load (i64.add (get_local $input.ptr)
+    (drop (i64.load (i32.add (get_local $input.ptr)
                              (get_local $i))))
 
     (br_if $continue

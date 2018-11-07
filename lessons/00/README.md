@@ -3,7 +3,7 @@
 Welcome to the handcrafting WebAssembly workshop. WebAssembly is a byte-code for
 the web, making it possible for compilers to target at common instruction format.
 
-Desipte the name it is note quite assembly and not quite web, since it does not
+Despite the name it is note quite assembly and not quite web, since it does not
 natively allow you to access any Web APIs (yet!) and is more high-level than
 assembly, as you don't directly interact with the CPUs instruction set, but
 an idealised instruction set, that the runtime can very simply and efficiently
@@ -12,10 +12,6 @@ translate to machine code.
 As we will see when we look at the instruction format, WebAssembly is an
 extremely secure sandbox, where access to anything outside the VM is granted
 explicitly.
-
-In this workshop we will be working with the S-expression based WebAssembly
-Text-Format (WAT), which at first will seem foreign to Javascript developers
-but quickly will become familiar.
 
 To get started you need a recent version of Node (8+), which you can check with:
 
@@ -31,6 +27,13 @@ Install the following tools:
 
 ```sh
 npm install --global wat2wasm wat2js
+```
+
+You can verify the tools with:
+
+```sh
+wat2wasm --help
+wat2js --help
 ```
 
 `wat2wasm` is the compiler and `wat2js` depends on this compiler, and in

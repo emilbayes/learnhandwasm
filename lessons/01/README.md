@@ -13,6 +13,10 @@ Without further ado, here is the first WASM module we will be looking at:
       (get_local $b))))
 ```
 
+In this workshop we will be working with the S-expression based WebAssembly
+Text-Format (WAT), which at first will seem foreign to Javascript developers
+but quickly will become familiar.
+
 The above module is the "hello world" of WebAssembly. Before we start writing
 WAT ourselves we need to learn a bit about the syntax and grammar of WAT. You
 should paste the module into a file so we can play around with it. I will be

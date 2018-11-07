@@ -1,4 +1,4 @@
-## Writing to memory from Javascript
+# Writing to memory from Javascript
 
 Now we have seen how to manipulate memory from inside WASM, but this is not much
 better than just calling our conversion functions directly. So now we will see
@@ -38,5 +38,11 @@ f64Array[1] = 10e-100
 console.log(mod.exports['f64.get'](0) === 1)
 console.log(mod.exports['f64.get'](1) === 10e-100)
 ```
+
+## Exercise
+
+Write javascript that sends a `f64`array of size 3 to your WASM program, which
+takes these three numbers, adds them, and returns the result back to the
+javascript program. The javascript program should print out the result.
 
 [**Exercise 07**](../07)

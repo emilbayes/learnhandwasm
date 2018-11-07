@@ -2,8 +2,7 @@
 
 So far we have trusted our ability to write correct code, but soon we will go
 into more looping, which is notorious for causing bugs, so I want to do a detour
-on how I do debugging in WASM. It's a bit lengthy, so skip ahead if you want to
-get back to writing code.
+on how I do debugging in WASM.
 
 ## Disassembly
 
@@ -177,7 +176,7 @@ The full example for all WASM types is given here:
 ```
 
 ```js
-var wasmModule = require('./debug-module')
+var wasmModule = require('./debug_helpers')
 
 wasmModule({
   import: {
@@ -193,6 +192,9 @@ wasmModule({
   }
 })
 ```
+
+To use this, paste the WASM part into `debug_helpers.wasm`, then copy the JS
+above into each JS file.
 
 ## Asserting
 

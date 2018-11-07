@@ -27,7 +27,18 @@ is a model for branching/looping:
 
     (br_if $continue
            ;; tee_local lets sets the value and also returns it in a single
-           ;; instruction
+           ;; instruction, so we can do `length < i++`
            (i32.lt_u (tee_local $i (i32.add (get_local $i) (i32.const 8)))
                      (get_local $input.end))))
 ```
+
+So the `loop` instruction is a label that you can move to with the `(br $label`)
+unconditionally, and move to based on a condition with `(br_if $label i32)` as
+in the above example. Note how the loop above increments the counter by 8 every
+iteration, since that's the byte width of our type.
+
+## Exercise
+
+The exercise now is to set a list of temperatures into memory, convert them
+from Fahrenheit to Celsius in-place with load/store from the previous exercises
+and read out the contents.

@@ -50,8 +50,8 @@ below we want to pretend the memory is a big array of Numbers, and as `f64`
 hints, this is 64-bits wide. `64 bits = 8 bytes` which means to go from an
 index to a pointer, we need to multiply by 8.
 
-Here is a table showing what the memory would look like with `1` at address 0
-and `10e-100` at address 8:
+Here is a table showing what the memory would look like with the f64 `1` at
+address 0 and the f64 `10e-100` at address 8:
 
 | Address | +0         | +1         | +2         | +3         | +4         | +5         | +6         | +7         |
 |:--------|:-----------|:-----------|:-----------|:-----------|:-----------|:-----------|:-----------|:-----------|

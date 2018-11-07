@@ -131,3 +131,5 @@ mod.exports['f64.set'](1, 10e-100)
 console.log(mod.exports['f64.get'](0) === 1)
 console.log(mod.exports['f64.get'](1) === 10e-100)
 ```
+
+[**Exercise 06**](../06)

@@ -1,4 +1,4 @@
-# 03. Multiplication
+# 04. Multiplication
 
 Now it is time to write you own WAT module. We will start very simple, as to
 get you used to the syntax. A popular topic for conversation is the weather,

@@ -1,4 +1,4 @@
-# 01. Arithmetic ... WAT?
+# 02. Arithmetic ... WAT?
 
 Recall the module from the last exercise:
 
@@ -37,13 +37,17 @@ and replace the result, while you move outwards. See the following:
 20
 ```
 
+Also note that whitespace is ignored, so you can use it to organise your code.
+Single line comments are made with `;;` while multiline comments are `(; ... ;)`
+making it easy to remove entire instructions.
+
 ## The `$i32.add` function
 
 The first instruction you encounter in the module is `(func $i32.add ...)`.
 The `$i32.add` is a label just like `$arithmetic` was, and will be replaced with
 a counting integer when compiled, for efficiency reasons. The name is not
 arbitrarily chosen. In WASM there is the convention of naming instructions
-`return_type.operator`, and I tend to follow the same convention, to make my
+`type.operator`, and I tend to follow the same convention, to make my
 modules more readable.
 
 Next we declare `(export "i32.add")`, which is to say that the function should

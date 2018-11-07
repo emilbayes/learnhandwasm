@@ -53,15 +53,6 @@ flag, when compiling your modules. However, for production it is recommended
 to not add these symbols, as they can incur a significant increase in module
 size, just like you wouldn't ship source maps to production.
 
-## Exercise
-
-Write the arithmetic example at the top into `arithmetic.wat` and examine the
-resulting binary code with 
-
-```
-wat2wasm arithmetic.wat --dump-module --debug-names -
-```
-
 A bit of a nitty gritty detour, but head on to the next exercise where we will
 look at `$i32.add` function:
 

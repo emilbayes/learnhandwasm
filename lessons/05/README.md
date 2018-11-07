@@ -74,7 +74,6 @@ of `f64`s.
   (func $f64.set (export "f64.set")
     (param $index i32)
     (param $value f64)
-    (result f64)
 
     (local $ptr i32)
 

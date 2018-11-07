@@ -42,7 +42,7 @@ console.log(mod.exports['f64.c2f'](-273.15) === -459.66999999999996)
 ```
 
 <details>
-  <summary><strong>Solution</strong></summary>
+  <summary><strong>Hint</strong></summary>
 
 ```webassembly
 ;; temperature.wat

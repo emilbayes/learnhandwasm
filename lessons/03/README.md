@@ -30,10 +30,13 @@ instantiate modules manually.
 To use our module you can require it from Javascript:
 
 ```js
+// require the compiled module as you would any other js module
 var wasm = require('./arithmetic')
 
+// instantiate the wasm
 var mod = wasm()
 
+// and call an exported wasm function from js
 console.log(mod.exports['i32.add'](10, 10))
 ```
 
